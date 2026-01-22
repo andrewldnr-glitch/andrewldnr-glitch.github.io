@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>О компании — ГеоПроект</title>
+  <meta name="description" content="О компании: подход к работе, ценности, география работ, как мы сопровождаем клиентов." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+
+<header class="header">
+  <div class="container">
+    <div class="header-inner">
+      <a class="brand" href="index.html"><span class="brand-badge"></span><span>ГеоПроект<small>Кадастр · Геодезия</small></span></a>
+      <nav class="nav" aria-label="Навигация">
+        <a data-nav href="services.html">Услуги</a>
+        <a data-nav href="about.html">О компании</a>
+        <a data-nav href="contacts.html">Контакты</a>
+      </nav>
+      <div class="header-cta">
+        <button class="menu-btn" data-menu-btn aria-label="Открыть меню" aria-expanded="false">☰</button>
+        <a class="btn ghost" href="contacts.html#form">Оставить заявку</a>
+        <a class="btn primary" href="tel:+79990000000">Позвонить</a>
+      </div>
+    </div>
+    <div class="mobile-nav" data-mobile-nav>
+      <a data-nav href="services.html">Услуги</a>
+      <a data-nav href="about.html">О компании</a>
+      <a data-nav href="contacts.html">Контакты</a>
+      <a href="contacts.html#form">Оставить заявку</a>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="section">
+  <div class="container">
+    <h2>О компании</h2>
+    <p class="sub">
+      Здесь можно аккуратно перенести ваш текст “о нас”, опыт, лицензии/допуски (если есть), географию работ, подход.
+    </p>
+
+    <div class="split">
+      <div class="card">
+        <h3>Подход</h3>
+        <ul class="list">
+          <li><strong>Прозрачно</strong><small>сроки и стоимость фиксируем заранее</small></li>
+          <li><strong>Аккуратно</strong><small>работаем с документами и измерениями без “примерно”</small></li>
+          <li><strong>Понятно</strong><small>объясняем, что и зачем делаем</small></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>География</h3>
+        <p class="muted">Санкт-Петербург и Ленинградская область.</p>
+        <div class="badges">
+          <span class="badge">Выезды</span>
+          <span class="badge">Акты</span>
+          <span class="badge">Отчёты</span>
+        </div>
+
+        <div class="hero-actions" style="margin-top:14px">
+          <a class="btn primary" href="contacts.html#form">Запросить стоимость</a>
+          <a class="btn" href="services.html">Услуги</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <strong>ГеоПроект</strong>
+        <p class="muted">© <span id="y"></span></p>
+      </div>
+      <div class="muted">
+        Тел.: <a href="tel:+79990000000">+7 (999) 000-00-00</a><br>
+        Email: <a href="mailto:info@example.com">info@example.com</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

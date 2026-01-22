@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Контакты — ГеоПроект</title>
+  <meta name="description" content="Контакты и форма заявки. Работаем по СПб и Ленинградской области." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+
+<header class="header">
+  <div class="container">
+    <div class="header-inner">
+      <a class="brand" href="index.html"><span class="brand-badge"></span><span>ГеоПроект<small>Кадастр · Геодезия</small></span></a>
+      <nav class="nav" aria-label="Навигация">
+        <a data-nav href="services.html">Услуги</a>
+        <a data-nav href="about.html">О компании</a>
+        <a data-nav href="contacts.html">Контакты</a>
+      </nav>
+      <div class="header-cta">
+        <button class="menu-btn" data-menu-btn aria-label="Открыть меню" aria-expanded="false">☰</button>
+        <a class="btn ghost" href="#form">Оставить заявку</a>
+        <a class="btn primary" href="tel:+79990000000">Позвонить</a>
+      </div>
+    </div>
+    <div class="mobile-nav" data-mobile-nav>
+      <a data-nav href="services.html">Услуги</a>
+      <a data-nav href="about.html">О компании</a>
+      <a data-nav href="contacts.html">Контакты</a>
+      <a href="#form">Оставить заявку</a>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="section">
+  <div class="container">
+    <h2>Контакты</h2>
+    <p class="sub">Напишите — ответим и сориентируем по срокам/стоимости.</p>
+
+    <div class="split">
+      <div class="card">
+        <h3>Связаться</h3>
+        <ul class="list">
+          <li><strong>Телефон</strong><small><a href="tel:+79990000000">+7 (999) 000-00-00</a></small></li>
+          <li><strong>Email</strong><small><a href="mailto:info@example.com">info@example.com</a></small></li>
+          <li><strong>Регион</strong><small>СПб и Ленинградская область</small></li>
+        </ul>
+        <p class="form-note" style="margin-top:10px">* Контакты замени на свои.</p>
+      </div>
+
+      <div class="card" id="form">
+        <h3>Оставить заявку</h3>
+        <form class="form" data-contact-form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+          <div class="form-row">
+            <input class="input" name="name" placeholder="Ваше имя" required />
+            <input class="input" name="phone" placeholder="Телефон" />
+          </div>
+          <input class="input" type="email" name="email" placeholder="Email" required />
+          <input class="input" name="subject" placeholder="Тема (например: техплан дома)" />
+          <textarea class="input" name="message" placeholder="Кратко опишите задачу" required></textarea>
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+          <button class="btn primary" type="submit">Отправить</button>
+          <p class="form-note">Нажимая «Отправить», вы соглашаетесь на обработку заявки.</p>
+          <div class="notice" data-form-notice></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><strong>ГеоПроект</strong><p class="muted">© <span id="y"></span></p></div>
+      <div class="muted">
+        Тел.: <a href="tel:+79990000000">+7 (999) 000-00-00</a><br>
+        Email: <a href="mailto:info@example.com">info@example.com</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

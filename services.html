@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Услуги — ГеоПроект</title>
+  <meta name="description" content="Перечень кадастровых и геодезических услуг: межевание, техпланы, вынос в натуру, съёмка, сопровождение." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+
+<header class="header">
+  <div class="container">
+    <div class="header-inner">
+      <a class="brand" href="index.html"><span class="brand-badge"></span><span>ГеоПроект<small>Кадастр · Геодезия</small></span></a>
+      <nav class="nav" aria-label="Навигация">
+        <a data-nav href="services.html">Услуги</a>
+        <a data-nav href="about.html">О компании</a>
+        <a data-nav href="contacts.html">Контакты</a>
+      </nav>
+      <div class="header-cta">
+        <button class="menu-btn" data-menu-btn aria-label="Открыть меню" aria-expanded="false">☰</button>
+        <a class="btn ghost" href="contacts.html#form">Оставить заявку</a>
+        <a class="btn primary" href="tel:+79990000000">Позвонить</a>
+      </div>
+    </div>
+    <div class="mobile-nav" data-mobile-nav>
+      <a data-nav href="services.html">Услуги</a>
+      <a data-nav href="about.html">О компании</a>
+      <a data-nav href="contacts.html">Контакты</a>
+      <a href="contacts.html#form">Оставить заявку</a>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="section">
+  <div class="container">
+    <h2>Услуги</h2>
+    <p class="sub">Ниже — базовый список. Мы подстроим под ваш объект и ситуацию.</p>
+
+    <div class="grid cols-2">
+      <section class="card" id="cadastre">
+        <span class="pill">Кадастр</span>
+        <h3>Межевание и документы</h3>
+        <ul class="list">
+          <li><strong>Межевой план</strong><small>уточнение/образование участка, раздел/объединение</small></li>
+          <li><strong>Технический план</strong><small>дом, квартира, нежилое помещение</small></li>
+          <li><strong>Акт обследования</strong><small>для снятия с учёта (по ситуации)</small></li>
+        </ul>
+      </section>
+
+      <section class="card" id="geodesy">
+        <span class="pill">Геодезия</span>
+        <h3>Съёмка, вынос, контроль</h3>
+        <ul class="list">
+          <li><strong>Вынос границ в натуру</strong><small>точки на местности + акт</small></li>
+          <li><strong>Топографическая съёмка</strong><small>планы для проектирования/согласований</small></li>
+          <li><strong>Исполнительная съёмка</strong><small>контроль строительства/работ</small></li>
+        </ul>
+      </section>
+
+      <section class="card" id="support">
+        <span class="pill">Сопровождение</span>
+        <h3>Консультации и “под ключ”</h3>
+        <ul class="list">
+          <li><strong>Предварительная оценка</strong><small>сроки, риски, список документов</small></li>
+          <li><strong>Сопровождение подачи</strong><small>поможем подготовить комплект</small></li>
+          <li><strong>Коммуникация</strong><small>держим в курсе, отвечаем быстро</small></li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <span class="pill">Быстрый расчёт</span>
+        <h3>Оставьте заявку — ответим в ближайшее время</h3>
+        <p class="muted">Перейти на страницу контактов и отправить форму.</p>
+        <div class="hero-actions" style="margin-top:14px">
+          <a class="btn primary" href="contacts.html#form">Оставить заявку</a>
+          <a class="btn" href="tel:+79990000000">Позвонить</a>
+        </div>
+      </section>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <strong>ГеоПроект</strong>
+        <p class="muted">© <span id="y"></span></p>
+      </div>
+      <div class="muted">
+        Тел.: <a href="tel:+79990000000">+7 (999) 000-00-00</a><br>
+        Email: <a href="mailto:info@example.com">info@example.com</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
